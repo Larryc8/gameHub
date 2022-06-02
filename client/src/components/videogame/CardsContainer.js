@@ -100,12 +100,13 @@ const CardsContainer = ()=>{
       }}
       >{selectedGames}</span>
 
+      {newGameWasAdded? <Notification />: null}
+
       {
         !available? <Loading />:
         wasNotFound? <GameNotFound msg='The game(s) that you are looking for dont exist'/> :
         !games.length? <GameNotFound msg={`It seems like dont exist games with ${genreFilter} genre, try filter by another genre`} />:
           <div>
-              {newGameWasAdded? <Notification />: null}
 
               <NavButtonArrow name='Prev' action={moveToPrevPage} pageSize={games.length} className={style.buttonLeft}/>
               <NavButtonArrow name='Next' action={moveToNextPage} pageSize={games.length} className={style.buttonRight}/>
