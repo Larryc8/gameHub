@@ -40,7 +40,7 @@ const Filter = ()=>{
         }}
       >
         <DropDownMenu  filterAction={orderBy} name='property' options={[{name: 'rating'}, {name: 'name'}]} currentSelection={orderByProp}/>
-        <DropDownMenu  filterAction={setOrderType} name='ordering' options={[{name: 'descendent'}, {name: 'ascendent'}]} currentSelection={ordering}/>
+        <DropDownMenu  filterAction={setOrderType} name='ordering' options={[{name: 'descending'}, {name: 'ascending'}]} currentSelection={ordering}/>
       </div>
     </div>
   )

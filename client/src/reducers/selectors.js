@@ -3,10 +3,10 @@ const orderByName = (array, ordering)=>{
   const newArray = [...array]
   let COMPARATOR = 0
 
-  if(ordering === 'ascendent'){
+  if(ordering === 'ascending'){
       COMPARATOR = 1
   }
-  if(ordering === 'descendent') {
+  if(ordering === 'descending') {
      COMPARATOR = -1
   }
 
@@ -21,10 +21,10 @@ const orderByRating = (array, ordering)=>{
   const newArray = [...array]
   let COMPARATOR = 0
 
-  if(ordering === 'ascendent'){
+  if(ordering === 'ascending'){
       COMPARATOR = -1
   }
-  if(ordering === 'descendent') {
+  if(ordering === 'descending') {
      COMPARATOR = 1
   }
 

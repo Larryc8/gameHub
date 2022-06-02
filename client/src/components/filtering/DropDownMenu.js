@@ -20,10 +20,8 @@ const DropDownMenu = ({currentSelection, name, options, filterAction}) =>{
     <div className={style.container}>
     <span>{name}: </span>
     <input  id={name} className={style.optionSelected} onClick={()=>setOpen(!open)} value={currentSelection} />
-        {
-          open? <label htmlFor={name} > <img width='10px' src={arrow}/> </label> :
-          <label htmlFor={name}>  <img width='10px' src={arrow} style={{transform: 'rotate(180deg)'}} alt=''/>  </label>
-        }
+
+     <label htmlFor={name} > <img width='10px' src={arrow}  style={{transform: open? 'rotate(180deg)': 'rotate(0deg)' }}   /> </label> :
       {
         !open?
         null :

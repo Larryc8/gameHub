@@ -27,7 +27,7 @@ const defaultGamestate = {
   gameDetails: {},
   genreFilter: 'All',
   orderByProp: 'rating',
-  ordering: 'descendent',
+  ordering: 'descending',
   pageSliceSize: 15,
   pageIndex: 0,
   games: 'All',
