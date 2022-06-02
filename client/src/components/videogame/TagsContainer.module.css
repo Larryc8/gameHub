@@ -1,0 +1,41 @@
+
+.gameTagswarapper{
+  color: red;
+}
+
+.selectedTag{
+  background-color: teal;
+  font-family: monospace;
+
+	//border: 1px solid #2D2747;
+  border: none;
+	border-radius: 2px;
+	display: inline-block;
+	font-size: 12px;
+	margin: 0 7px 7px 0;
+	padding: 4px;
+}
+
+
+.gameTagsCotainer{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+
+  color: #fff;
+  left: 30px;
+  bottom: 13%;
+}
+
+.gameTag {
+  font-family: monospace;
+
+  background-color: rgb(0, 116, 228);
+	//border: 1px solid #2D2747;
+  border: none;
+	border-radius: 2px;
+	display: inline-block;
+	font-size: 12px;
+	margin: 0 7px 7px 0;
+	padding: 4px;
+}

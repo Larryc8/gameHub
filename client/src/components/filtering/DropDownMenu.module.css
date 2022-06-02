@@ -1,0 +1,61 @@
+
+/*
+//////////////////////////////////
+*/
+
+.container {
+  background-color: rgb(224, 225, 221);
+  padding: 7px;
+  position: reltive;
+  width: max-content;
+  //border-radius: 4px;
+}
+
+.options {
+  z-index: 4;
+  position: absolute;
+  background-color: #fff;
+  top: 140px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 300px;
+  padding: 10px;
+  box-shadow: 0px 6px 10px rgba(27, 38, 59, 0.5);
+}
+
+.option{
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+
+  font-size: 16px;
+
+   transition: background .1s ease-out;
+   display: inline-block;
+   width: 140px;
+}
+
+.optionSelected{
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+
+  font-size: 16px;
+
+   transition: background .1s ease-out;
+   display: inline-block;
+   width: 140px;
+   outline: none;
+}
+
+
+.option:focus {
+  background: rgba(119, 141, 169, .3);
+  outline: none;
+}
+
+.option:hover {
+  color: white;
+  background-color: rgb(65, 90, 119);
+}
