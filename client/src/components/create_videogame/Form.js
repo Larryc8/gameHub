@@ -3,13 +3,14 @@ import {Link} from 'react-router-dom';
 import {useSelector, useDispatch} from 'react-redux';
 import axios from 'axios';
 
-import {addGame, getAllGenres, getAllPlatforms, setGameAdded} from '../../actions/index.js';
+import {getAllGenres, getAllPlatforms, setGameAdded} from '../../actions/index.js';
 import validate from './validate.js'
 
 import DateInput from './DateInput.js'
 import TagsSelector from './TagsSelector.js'
 import Notification from '../Notification.js'
 import CardTemplate from './CardTemplate.js'
+import Loading from '../Loading.js'
 
 import previous from '../images/previous.svg'
 
