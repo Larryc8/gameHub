@@ -17,6 +17,7 @@ import NavIndexes from '../navigation/NavIndexes.js'
 import NavButtonArrow from '../navigation/NavButtonArrow.js'
 import Loading from '../Loading.js'
 import Footer from '../Footer.js'
+import GameNotFound from './GameNotFound.js';
 
 import style from './CardsContainer.module.css'
 import reload from '../images/curved-arrow.svg'
@@ -35,34 +36,6 @@ const Notification = () =>{
   return (
     <div className={style.notification}>
       <span onClick={handleClick}><span>⟲</span> new games were added</span>
-    </div>
-  )
-}
-
-const GameNotFound = ({msg})=>{
-  const dispatch = useDispatch()
-
-  const styleContainer =  {
-    position: 'absolute',
-    left: '50%',
-    transform: "translate(-50%, 100px)",
-    background: '#fff',
-    padding: '20px',
-    boxShadow: '0 5px 50px rgba(0,0,0, .4)'
-  }
-
-  return (
-    <div style={styleContainer}>
-      <h1>VIDEOGAME NOT FOUND</h1>
-      <img src={forest} />
-      <p style={{fontSize: "18px"}}>{msg}</p>
-      <span
-          className={style.buttonPrimary}
-          onClick={ ()=>{
-            dispatch(getAllGames())
-            dispatch(filterByGenre('All'))
-          }}
-        >Go home</span>
     </div>
   )
 }

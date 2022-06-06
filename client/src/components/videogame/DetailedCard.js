@@ -58,7 +58,7 @@ const DetailedCard = ()=>{
             <div className={style.buttonContainer}>
               {
                 available?
-                <Link to='/home'><input type='button' value='Back to home' className={style.button} /></Link> :
+                <Link to='/home'><input type='button' value='Back' className={style.button} /></Link> :
                 null
               }
             </div>
